@@ -12,6 +12,8 @@
 2.大多图片是放在cdn服务器上的，在这个层面加逻辑判断难度较大。
 - 前端检测
 目前我们用的方案源码：
+
+```
 img.onload = function() {
     isSupportWebp = true; 
     that._firstCheckImages();
@@ -21,8 +23,8 @@ img.onerror = function() {
     that._firstCheckImages();
 };
 img.src = 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAsAAAABBxAREYiI/gcAAABWUDggGAAAADABAJ0BKgEAAQABABwlpAADcAD+/gbQAA==';
-因为这张base64图是webp格式。如果不支持会触发image.error方法，所以如果触发了onload方法，
-那就说明浏览器支持webp格式。
+```
+因为这里的img.src是webp格式的base64图，所以如果不支持会触发image.error方法，如果触发了onload方法，那就说明浏览器支持webp格式。
 
 ### 其它比较有意思的点
 #### 图片规格
