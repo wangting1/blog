@@ -8,13 +8,13 @@
 	- animationname：动画名称。
 	- keyframes-selector：用来划分动画的时长，一般是百分数的形式，0%，10%，100%，还有from和to的形式，from相当于0%，to相当于100%。
 	- css-styles：与keyframes-selector对应的css样式。
-- 如：以下动画可以实现元素在制定时间内逐渐由可见变为不可见的状态。
+- 如：
 
 ```@keyframes testanimations{
 		from{opacity:1;}
 		to{opacity:0;}
 	}
-```
+```以上动画可以实现元素在制定时间内逐渐由可见变为不可见的状态。
 
 
 ### @import
