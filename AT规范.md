@@ -10,11 +10,12 @@
 	- css-styles：与keyframes-selector对应的css样式。
 - 如：
 
-```@keyframes testanimations{
+```
+@keyframes testanimations{
 		from{opacity:1;}
 		to{opacity:0;}
 	}
-``````
+```
 以上动画可以实现元素在制定时间内逐渐由可见变为不可见的状态。
 
 
@@ -47,7 +48,8 @@
 ### @media
 - 使用 @media 查询，你可以针对不同的媒体类型定义不同的样式，对于响应式布局非常好用，如：
 
- ```
+
+```
   @media screen and (max-width: 1024px) {
     body {
         background-color:red;
@@ -55,9 +57,12 @@
 }
 ```
 
-- 其语法如下： ```@media mediatype and|not|only (media feature) {
+- 其语法如下： 
+```
+@media mediatype and|not|only (media feature) {
     CSS-Code;
-}```
+}
+```
 
 - 对于Retina屏幕判断：
 
@@ -71,10 +76,13 @@ only screen and (min-resolution:2dppx) {
 
 # @font-face
 - 设置嵌入HTML文档的字体
-- 语法：@font-face{font-family:name;src:<url>;sRules;}如：```@font-face{
+- 语法：@font-face{font-family:name;src:<url>;sRules;}如：
+```
+@font-face{
 	font-family:YH;
 	src:url(http://domain/fonts/MSYH.TTF);
-}```
+}
+```
 
 # @page
 - 设置页面容器的版式，方向，边空等。
